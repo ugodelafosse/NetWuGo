@@ -8,6 +8,7 @@ import { ApiService } from '../services/api.service';
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css']
 })
+
 export class MessagesComponent implements OnInit {
   constructor(private apiService: ApiService, private route: ActivatedRoute) {}
 

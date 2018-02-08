@@ -11,6 +11,4 @@ export class AppComponent {
   constructor(private authService: AuthService) {}
 
   title = 'my app';
-
-  username = this.authService.username;
 }
