@@ -1,0 +1,26 @@
+Backend: 
+
+- heroku login
+
+- cd '../backend'
+
+- git add .
+
+- git commit -m "commit message"
+
+- git push heroku master
+
+Frontend:
+
+- cd ../frontend
+
+- in cmd : ng build --env=prod
+
+- go to 'https://s3.console.aws.amazon.com/s3/home?region=us-east-2' (Amazon S3),
+
+- Upload 'dist' directory
+
+
+URL ---> http://netwugo.s3-website.us-east-2.amazonaws.com/
+
+
