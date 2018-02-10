@@ -26,6 +26,7 @@ import { UsersComponent } from './users/users.component';
 import { ProfileComponent } from './profile/profile.component';
 import { PostComponent } from './post/post.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     UsersComponent,
     ProfileComponent,
     PostComponent,
-    NavbarComponent
+    NavbarComponent,
+    WelcomePageComponent
   ],
   imports: [
     BrowserModule,

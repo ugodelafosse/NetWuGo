@@ -1,0 +1,4 @@
+<app-post *ngIf="authService.isAuthenticated"></app-post>
+<div *ngIf="!authService.isAuthenticated">
+    <h1>Welcome !</h1>
+</div>

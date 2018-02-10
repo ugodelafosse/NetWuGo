@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ApiService } from '../services/api.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-post',
@@ -7,7 +8,7 @@ import { ApiService } from '../services/api.service';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent {
-  constructor( private apiService: ApiService ) {}
+  constructor(private apiService: ApiService, private authService: AuthService) {}
 
   postMsg = '';
 

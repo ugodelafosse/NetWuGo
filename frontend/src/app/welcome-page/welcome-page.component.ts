@@ -2,12 +2,11 @@ import { Component } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css'],
+  selector: 'app-welcome-page',
+  templateUrl: './welcome-page.component.html',
+  styleUrls: ['./welcome-page.component.css']
 })
 
-export class NavbarComponent {
+export class WelcomePageComponent {
   constructor(private authService: AuthService) {}
 }
-

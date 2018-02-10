@@ -6,10 +6,11 @@ import { AuthService } from '../services/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent {
   loginData = {};
 
-  constructor( private authService: AuthService ) {}
+  constructor(private authService: AuthService) {}
 
   post() {
     this.authService.loginUser(this.loginData);
