@@ -32,6 +32,7 @@ export class AuthService {
   registerUser(registerData) {
     this.http.post<any>(this.path + '/register', registerData).subscribe(res => {
       this.saveToken(res.token);
+      this.saveUsername(res.username);
     });
   }
 

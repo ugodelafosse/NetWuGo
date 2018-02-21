@@ -1,18 +1,9 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>
-      <h4>Register New User</h4>
-    </mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
+<div class="container">
+  <div class="registerTitle">
+    <h1>Fill form below to register.</h1>
+  </div>
+  <div class="registerForm">
     <form>
-      <mat-input-container>
-        <input [(ngModel)]="registerData.email" name="email" matInput placeholder="Email" type="email">
-      </mat-input-container>
-      <mat-input-container>
-        <input [(ngModel)]="registerData.password" name="password" matInput placeholder="Password" type="password">
-      </mat-input-container>
-      <br>
       <mat-input-container>
         <input [(ngModel)]="registerData.firstname" name="firstname" matInput placeholder="Firstame">
       </mat-input-container>
@@ -20,11 +11,18 @@
         <input [(ngModel)]="registerData.surname" name="surname" matInput placeholder="Surname">
       </mat-input-container>
       <br>
-      <mat-input-container style="width: 100%">
+      <mat-input-container>
+        <input [(ngModel)]="registerData.email" name="email" matInput placeholder="Email" type="email">
+      </mat-input-container>
+      <mat-input-container>
+        <input [(ngModel)]="registerData.password" name="password" matInput placeholder="Password" type="password">
+      </mat-input-container>
+      <br>
+      <mat-input-container class="desc">
         <textarea [(ngModel)]="registerData.description" name="description" matInput placeholder="Description"></textarea>
       </mat-input-container>
       <br>
-      <button (click)="post()" mat-raised-button color="primary">Register</button>
+      <button class="button arrow" (click)="post()">Register</button>
     </form>
-  </mat-card-content>
-</mat-card>
+  </div>
+</div>

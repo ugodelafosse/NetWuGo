@@ -15,7 +15,7 @@ router.post('/register', (req, res) => {
     if (err)
       return res.status(500).send({ message: 'Error saving user' });
 
-    createSendToken(res, newUser);
+      tokenAndUserInfos(res, newUser);
   });
 });
 
@@ -31,12 +31,12 @@ router.post('/login', async (req, res) => {
     if (!isMatch)
       return res.status(401).send({ message: 'Email or password invalid' });
 
-    TokenAndUserInfos(res, user);
+    tokenAndUserInfos(res, user);
 
   });
 });
 
-function TokenAndUserInfos(res, user) {
+function tokenAndUserInfos(res, user) {
 
   const payload = { sub: user._id };
 

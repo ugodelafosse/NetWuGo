@@ -1,0 +1,50 @@
+.headWelcome {
+    position: relative;
+    height: 300px;
+    z-index: 1;
+}
+
+.background {
+    background: url('../images/city.jpg') no-repeat;
+    background-size: 100%;
+    background-position-y: 40%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .7;
+    width: 100%;
+    height: 100%;
+}
+
+.headTitle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.first {
+    background: #297fca;
+    color: #fff;
+    width: 10%;
+    margin: 0 auto;
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.second {
+    margin: 0 auto;
+    background: black;
+    color: #fff;
+    width: 30%;
+    font-weight: bold;
+    font-size: 28px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+

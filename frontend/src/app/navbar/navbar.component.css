@@ -11,7 +11,7 @@
 }
 
 .nav button:hover {
-    background: #E84C3D;
+    background: #297fca;
 }
 
 .siteName {
@@ -25,6 +25,7 @@
 
 .siteName:hover {
     cursor: pointer;
+    color: #6eaadf;
 }
 
 .siteName:focus {

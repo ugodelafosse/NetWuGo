@@ -1,0 +1,109 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.loginTitle {
+    position: relative;
+    background: #009ED8;
+    height: 100px;
+}
+
+.loginTitle h1 {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loginForm {
+    background: lavender;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.mat-form-field {
+    width: 70%;
+}
+
+.button {
+    display: inline-block;
+    font-family: "Montserrat", "Trebuchet MS", Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    position: relative;
+    padding: .8em 1.4em;
+    padding-right: 4.7em;
+    background: #009ED8;
+    border: none;
+    color: white;
+    transition: .2s;
+}
+.button:before,
+.button:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    width: 2.8em;
+    content: "\00a0";
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    transition: .2s;
+    transform-origin: 50% 60%;
+}
+.button:before {
+    background: rgba(0, 0, 0, 0.09999999999999998);
+}
+.button:hover {
+    background: #0079a5;
+    cursor: pointer;
+}
+.button:active,
+.button:focus {
+    background: #002e3f;
+    outline: none;
+}
+.button {
+    min-width: 15em;
+}
+
+.arrow {
+    background: #009ED8;
+}
+.arrow:hover {
+    background: #0079a5;
+}
+.arrow:active,
+.arrow:focus {
+    background: #002e3f;
+}
+.arrow:after {
+    content: "\F054";
+}
+.arrow:hover:after {
+    -webkit-animation: bounceright .3s alternate ease infinite;
+    animation: bounceright .3s alternate ease infinite;
+}
+
+@-webkit-keyframes bounceright {
+    from {
+      -webkit-transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(3px);
+    }
+}
+@keyframes bounceright {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(3px);
+    }
+}
